@@ -1,232 +1,961 @@
-/* Header */
+/* ==========================================================
+   FINKLINZ COMPONENTS
+   ========================================================== */
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
 .site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    min-height: var(--fink-header-height);
-    display: flex;
-    align-items: center;
-    background: rgba(5, 9, 20, .78);
-    border-bottom: 1px solid rgba(255,255,255,.06);
+
+    width: 100%;
+    height: 88px;
+
+    background: rgba(5, 9, 20, 0.96);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+
     backdrop-filter: blur(18px);
-    transition: background .3s ease, box-shadow .3s ease, transform .3s ease;
+    -webkit-backdrop-filter: blur(18px);
+
+    transition:
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
+
 
 .site-header.is-scrolled {
-    background: rgba(5, 9, 20, .94);
-    box-shadow: 0 14px 40px rgba(0, 0, 0, .25);
+    background: rgba(5, 9, 20, 0.99);
+
+    border-color:
+        rgba(255, 255, 255, 0.09);
+
+    box-shadow:
+        0 14px 45px
+        rgba(0, 0, 0, 0.30);
 }
+
+
+/* ==========================================================
+   HEADER INNER
+   ========================================================== */
 
 .site-header__inner {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 36px;
+    width: 100%;
+    height: 88px;
+
+    display: flex;
     align-items: center;
+
+    gap: 24px;
+
+    margin: 0;
+
+    padding-left: 48px;
+    padding-right: 48px;
 }
+
+
+/* ==========================================================
+   BRAND
+   ========================================================== */
 
 .site-brand {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-}
+    flex: 0 0 220px;
 
-.site-brand__logo,
-.site-brand .custom-logo {
-    display: block;
-    width: 175px;
-    max-height: 58px;
-    object-fit: contain;
-}
+    width: 220px;
+    height: 68px;
 
-.site-nav {
-    justify-self: center;
-}
-
-.site-nav__menu {
     display: flex;
-    gap: 28px;
     align-items: center;
+
     margin: 0;
     padding: 0;
-    list-style: none;
 }
+
+
+/*
+ * WordPress generates custom-logo-link itself.
+ */
+
+.site-brand .custom-logo-link,
+.site-brand__fallback {
+    display: flex;
+    align-items: center;
+
+    width: 220px;
+    height: 68px;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 0;
+
+    text-decoration: none;
+}
+
+
+/* Logo image */
+
+.site-brand .custom-logo,
+.site-brand__logo {
+
+    display: block;
+
+    width: 220px !important;
+    max-width: 220px !important;
+
+    height: 68px !important;
+    max-height: 68px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: contain !important;
+    object-position: left center !important;
+}
+
+
+/* ==========================================================
+   NAVIGATION
+   ========================================================== */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+
+.site-nav__menu {
+
+    display: flex;
+    align-items: center;
+
+    gap: 26px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    white-space: nowrap;
+}
+
+
+.site-nav__menu li {
+
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+}
+
 
 .site-nav__menu a {
+
     position: relative;
-    color: #fff;
-    font-size: .94rem;
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 12px 0;
+
+    color: #f8fbff;
+
+    font-size: 15px;
     font-weight: 600;
+    line-height: 1;
+
     text-decoration: none;
-    transition: color .25s ease;
+
+    transition:
+        color 0.25s ease;
 }
+
+
+/* ==========================================================
+   NAVIGATION UNDERLINE
+   ========================================================== */
 
 .site-nav__menu a::after {
+
     content: "";
+
     position: absolute;
+
     left: 50%;
-    bottom: -10px;
+    bottom: 0;
+
     width: 0;
     height: 2px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, var(--fink-cyan), var(--fink-violet));
-    transform: translateX(-50%);
-    transition: width .25s ease;
+
+    border-radius: 100px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #16c7ff,
+            #3675ff,
+            #7c3cff
+        );
+
+    transform:
+        translateX(-50%);
+
+    box-shadow:
+        0 0 12px
+        rgba(22, 185, 255, 0.5);
+
+    transition:
+        width 0.25s ease;
 }
+
 
 .site-nav__menu a:hover,
-.site-nav__menu .current-menu-item > a {
-    color: var(--fink-cyan);
+.site-nav__menu .current-menu-item > a,
+.site-nav__menu .current_page_item > a {
+
+    color: #16c7ff;
 }
 
+
 .site-nav__menu a:hover::after,
-.site-nav__menu .current-menu-item > a::after {
+.site-nav__menu .current-menu-item > a::after,
+.site-nav__menu .current_page_item > a::after {
+
     width: 100%;
 }
 
-/* Buttons */
+
+/* ==========================================================
+   HEADER CTA
+   ========================================================== */
+
+.site-header__cta {
+
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 16px;
+}
+
+
+/* ==========================================================
+   GLOBAL BUTTON
+   ========================================================== */
+
 .fink-btn {
+
     position: relative;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+
+    gap: 10px;
+
     min-height: 48px;
-    padding: 0 22px;
-    border-radius: 12px;
-    border: 1px solid transparent;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
+
+    padding:
+        0 22px;
+
     overflow: hidden;
+
+    border:
+        1px solid transparent;
+
+    border-radius: 12px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
     isolation: isolate;
-    transition: transform .25s ease, box-shadow .25s ease;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
+
+
+/* ==========================================================
+   HEADER BUTTON
+   ========================================================== */
+
+.site-header__cta .fink-btn {
+
+    min-height: 50px;
+
+    padding:
+        0 24px;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================================
+   BUTTON SHINE
+   ========================================================== */
 
 .fink-btn::before {
+
     content: "";
+
     position: absolute;
+
     inset: 0;
+
     z-index: -1;
+
     opacity: 0;
-    background: linear-gradient(120deg, rgba(255,255,255,.22), transparent 45%);
-    transition: opacity .25s ease;
+
+    background:
+        linear-gradient(
+            115deg,
+            rgba(255, 255, 255, 0.25),
+            rgba(255, 255, 255, 0.05) 35%,
+            transparent 60%
+        );
+
+    transform:
+        translateX(-18%);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.35s ease;
 }
+
 
 .fink-btn:hover {
-    transform: translateY(-2px);
+
+    transform:
+        translateY(-2px);
 }
+
 
 .fink-btn:hover::before {
+
     opacity: 1;
+
+    transform:
+        translateX(8%);
 }
+
+
+/* ==========================================================
+   GRADIENT BUTTON
+   ========================================================== */
 
 .fink-btn--gradient {
-    background: linear-gradient(135deg, #11bfff 0%, #356bff 50%, #7b38ff 100%);
-    box-shadow: 0 10px 28px rgba(70, 94, 255, .32);
+
+    background:
+        linear-gradient(
+            135deg,
+            #16c7ff 0%,
+            #3675ff 48%,
+            #7c3cff 100%
+        );
+
+    background-size:
+        180% 180%;
+
+    box-shadow:
+        0 10px 28px
+        rgba(57, 84, 255, 0.32);
 }
+
+
+.fink-btn--gradient:hover {
+
+    box-shadow:
+        0 15px 36px
+        rgba(57, 84, 255, 0.40),
+
+        0 0 26px
+        rgba(22, 185, 255, 0.14);
+}
+
+
+/* ==========================================================
+   BUTTON ARROW
+   ========================================================== */
 
 .fink-btn__arrow {
-    transition: transform .25s ease;
+
+    display: inline-block;
+
+    font-size: 17px;
+
+    transition:
+        transform 0.25s ease;
 }
+
 
 .fink-btn:hover .fink-btn__arrow {
-    transform: translateX(4px);
+
+    transform:
+        translateX(5px);
 }
 
-/* Mobile navigation button */
+
+/* ==========================================================
+   MOBILE NAVIGATION BUTTON
+   ========================================================== */
+
 .nav-toggle {
+
     display: none;
+
     width: 46px;
     height: 46px;
+
     padding: 10px;
-    border: 1px solid var(--fink-border);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
     border-radius: 12px;
-    background: transparent;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    cursor: pointer;
 }
 
-.nav-toggle span:not(.screen-reader-text) {
+
+.nav-toggle span {
+
     display: block;
+
+    width: 100%;
     height: 2px;
+
     margin: 5px 0;
-    border-radius: 10px;
-    background: white;
+
+    border-radius: 100px;
+
+    background: #ffffff;
 }
 
-/* Section heading */
+
+/* ==========================================================
+   SECTION HEADING
+   ========================================================== */
+
 .section-heading {
+
     max-width: 680px;
 }
 
+
 .section-heading__eyebrow {
+
     display: block;
+
     margin-bottom: 10px;
+
     color: var(--fink-cyan);
-    font-size: .78rem;
+
+    font-size: 0.78rem;
     font-weight: 800;
-    letter-spacing: .14em;
+
+    letter-spacing: 0.14em;
+
     text-transform: uppercase;
 }
 
+
 .section-heading__title {
+
     margin: 0;
-    font-size: clamp(2rem, 4vw, 4rem);
+
+    color: var(--fink-text);
+
+    font-size:
+        clamp(2rem, 4vw, 4rem);
+
+    font-weight: 800;
+
     line-height: 1.05;
+
+    letter-spacing: -0.035em;
 }
+
 
 .section-heading__text {
-    margin: 18px 0 0;
+
+    margin:
+        18px 0 0;
+
     color: var(--fink-muted);
+
+    font-size: 1.05rem;
+
+    line-height: 1.75;
 }
 
-/* Footer */
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
 .site-footer {
-    padding: 70px 0 22px;
+
+    position: relative;
+
+    padding:
+        72px 0 22px;
+
+    overflow: hidden;
+
     background:
-        radial-gradient(circle at 85% 60%, rgba(42, 72, 255, .12), transparent 25%),
+
+        radial-gradient(
+            circle at 85% 60%,
+            rgba(42, 72, 255, 0.14),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(22, 185, 255, 0.06),
+            transparent 24%
+        ),
+
         #030711;
-    border-top: 1px solid rgba(255,255,255,.07);
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.07);
 }
+
 
 .site-footer__grid {
+
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
+
+    grid-template-columns:
+        1.4fr
+        1fr
+        1fr;
+
     gap: 60px;
 }
 
+
+.site-footer__brand {
+
+    max-width: 360px;
+}
+
+
+.site-footer__logo-link {
+
+    display: inline-flex;
+
+    margin-bottom: 16px;
+
+    line-height: 0;
+}
+
+
 .site-footer__logo,
 .site-footer .custom-logo {
+
     width: 165px;
+    max-width: 165px;
+
     max-height: 58px;
+
     object-fit: contain;
 }
 
+
 .site-footer h3 {
-    margin-top: 0;
+
+    margin:
+        0 0 16px;
+
+    color: #ffffff;
+
     font-size: 1rem;
+    font-weight: 700;
 }
+
 
 .site-footer p,
 .site-footer li,
 .site-footer a {
+
     color: #a9b5c7;
+
     text-decoration: none;
 }
 
+
+.site-footer a {
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.site-footer a:hover {
+
+    color:
+        var(--fink-cyan);
+}
+
+
 .site-footer__menu,
 .site-footer__contact {
+
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
+
 .site-footer__menu li,
 .site-footer__contact li {
-    margin: 8px 0;
+
+    margin:
+        8px 0;
 }
 
+
 .site-footer__bottom {
+
     margin-top: 50px;
+
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,.06);
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
     text-align: center;
+}
+
+
+.site-footer__bottom p {
+
+    margin: 0;
+
+    font-size: 0.88rem;
+}
+
+
+/* ==========================================================
+   LARGE LAPTOP
+   ========================================================== */
+
+@media (max-width: 1350px) {
+
+    .site-header__inner {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+        gap: 18px;
+    }
+
+
+    .site-brand {
+
+        flex-basis: 190px;
+
+        width: 190px;
+    }
+
+
+    .site-brand .custom-logo-link,
+    .site-brand__fallback {
+
+        width: 190px;
+    }
+
+
+    .site-brand .custom-logo,
+    .site-brand__logo {
+
+        width: 190px !important;
+        max-width: 190px !important;
+    }
+
+
+    .site-nav__menu {
+
+        gap: 19px;
+    }
+
+
+    .site-nav__menu a {
+
+        font-size: 14px;
+    }
+
+
+    .site-header__cta {
+
+        margin-left: 8px;
+    }
+
+
+    .site-header__cta .fink-btn {
+
+        padding:
+            0 18px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 1050px) {
+
+    .site-header,
+    .site-header__inner {
+
+        height: 76px;
+    }
+
+
+    .site-header__inner {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .site-brand {
+
+        flex:
+            0 0 175px;
+
+        width: 175px;
+        height: 58px;
+    }
+
+
+    .site-brand .custom-logo-link,
+    .site-brand__fallback {
+
+        width: 175px;
+        height: 58px;
+    }
+
+
+    .site-brand .custom-logo,
+    .site-brand__logo {
+
+        width: 175px !important;
+        max-width: 175px !important;
+
+        height: 58px !important;
+        max-height: 58px !important;
+    }
+
+
+    /* Hide desktop CTA */
+
+    .site-header__cta {
+
+        display: none;
+    }
+
+
+    /* Show hamburger */
+
+    .nav-toggle {
+
+        display: block;
+
+        margin-left: auto;
+    }
+
+
+    /* Mobile menu */
+
+    .site-nav {
+
+        position: absolute;
+
+        top:
+            calc(100% + 10px);
+
+        left: 16px;
+        right: 16px;
+
+        display: none;
+
+        margin: 0;
+
+        padding: 18px;
+
+        border:
+            1px solid
+            rgba(255, 255, 255, 0.10);
+
+        border-radius: 18px;
+
+        background:
+            rgba(5, 9, 20, 0.99);
+
+        box-shadow:
+            0 28px 65px
+            rgba(0, 0, 0, 0.42);
+
+        backdrop-filter:
+            blur(20px);
+
+        -webkit-backdrop-filter:
+            blur(20px);
+    }
+
+
+    .site-nav.is-open {
+
+        display: block;
+    }
+
+
+    .site-nav__menu {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 4px;
+
+        white-space: normal;
+    }
+
+
+    .site-nav__menu li {
+
+        width: 100%;
+    }
+
+
+    .site-nav__menu a {
+
+        display: flex;
+
+        width: 100%;
+
+        padding:
+            14px 12px;
+
+        border-radius: 10px;
+
+        font-size: 15px;
+    }
+
+
+    .site-nav__menu a::after {
+
+        display: none;
+    }
+
+
+    .site-nav__menu a:hover,
+    .site-nav__menu .current-menu-item > a {
+
+        background:
+            rgba(22, 185, 255, 0.08);
+    }
+
+
+    .site-footer__grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 34px;
+    }
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 640px) {
+
+    .site-header,
+    .site-header__inner {
+
+        height: 70px;
+    }
+
+
+    .site-header__inner {
+
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+
+    .site-brand {
+
+        flex:
+            0 0 150px;
+
+        width: 150px;
+        height: 52px;
+    }
+
+
+    .site-brand .custom-logo-link,
+    .site-brand__fallback {
+
+        width: 150px;
+        height: 52px;
+    }
+
+
+    .site-brand .custom-logo,
+    .site-brand__logo {
+
+        width: 150px !important;
+        max-width: 150px !important;
+
+        height: 52px !important;
+        max-height: 52px !important;
+    }
+
+
+    .nav-toggle {
+
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .site-footer {
+
+        padding-top: 56px;
+    }
 }
