@@ -1,0 +1,29 @@
+# Ignore everything in the WordPress installation
+/*
+
+# Keep repository configuration
+!/.gitignore
+
+# Allow wp-content so we can reach our custom theme
+!/wp-content/
+
+# Ignore everything inside wp-content
+/wp-content/*
+
+# Allow themes directory
+!/wp-content/themes/
+
+# Ignore all installed themes
+/wp-content/themes/*
+
+# Track ONLY our reusable custom IT company theme
+!/wp-content/themes/finklinz-theme/
+!/wp-content/themes/finklinz-theme/**
+
+# Never track environment/generated files
+**/.DS_Store
+**/Thumbs.db
+**/*.log
+**/.env
+**/node_modules/
+**/vendor/
