@@ -1315,6 +1315,270 @@ get_header();
     </div>
 
 </section>
+<!-- ======================================================
+     WHY FINKLINZ / RESULTS
+======================================================= -->
+
+<section class="home-results">
+
+    <div class="home-results__glow home-results__glow--one"></div>
+    <div class="home-results__glow home-results__glow--two"></div>
+
+    <div class="fink-container">
+
+        <div class="home-results__header reveal">
+
+            <div>
+                <span class="home-results__eyebrow">
+                    Why Finklinz
+                </span>
+
+                <h2>
+                    Built for performance.
+                    <span>Designed for growth.</span>
+                </h2>
+            </div>
+
+            <div class="home-results__intro">
+
+                <span class="home-results__number">
+                    03 — CAPABILITIES
+                </span>
+
+                <p>
+                    We combine engineering, eCommerce, design and business thinking
+                    to create digital solutions that are fast, scalable and easy to maintain.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESULTS -->
+        <div class="home-results__stats">
+
+            <article class="result-stat reveal">
+
+                <span class="result-stat__value" data-count="30">
+                    0
+                </span>
+
+                <span class="result-stat__suffix">+</span>
+
+                <strong>
+                    Projects Delivered
+                </strong>
+
+                <p>
+                    Websites, commerce platforms and custom digital solutions.
+                </p>
+
+            </article>
+
+
+            <article class="result-stat reveal">
+
+                <span class="result-stat__value" data-count="95">
+                    0
+                </span>
+
+                <span class="result-stat__suffix">%</span>
+
+                <strong>
+                    Performance Focus
+                </strong>
+
+                <p>
+                    Built with speed, responsiveness and technical quality in mind.
+                </p>
+
+            </article>
+
+
+            <article class="result-stat reveal">
+
+                <span class="result-stat__value" data-count="10">
+                    0
+                </span>
+
+                <span class="result-stat__suffix">+</span>
+
+                <strong>
+                    Technology Capabilities
+                </strong>
+
+                <p>
+                    From WordPress and WooCommerce to Laravel, APIs and mobile apps.
+                </p>
+
+            </article>
+
+
+            <article class="result-stat reveal">
+
+                <span class="result-stat__value" data-count="100">
+                    0
+                </span>
+
+                <span class="result-stat__suffix">%</span>
+
+                <strong>
+                    Business Focused
+                </strong>
+
+                <p>
+                    Every solution starts with the business problem behind it.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- CAPABILITY GRID -->
+        <div class="home-capabilities">
+
+            <article class="capability-card capability-card--large reveal">
+
+                <span class="capability-card__index">
+                    01
+                </span>
+
+                <div class="capability-card__icon">
+                    ⚙
+                </div>
+
+                <span class="capability-card__label">
+                    Engineering
+                </span>
+
+                <h3>
+                    Clean, scalable development.
+                </h3>
+
+                <p>
+                    Reusable architecture, maintainable code and performance-conscious
+                    development across websites, applications and commerce platforms.
+                </p>
+
+                <div class="capability-card__tags">
+
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>WordPress</span>
+                    <span>REST API</span>
+
+                </div>
+
+            </article>
+
+
+            <article class="capability-card reveal">
+
+                <span class="capability-card__index">
+                    02
+                </span>
+
+                <div class="capability-card__icon">
+                    ◈
+                </div>
+
+                <span class="capability-card__label">
+                    Commerce
+                </span>
+
+                <h3>
+                    eCommerce built to sell.
+                </h3>
+
+                <p>
+                    Product architecture, payments, integrations and conversion-focused storefronts.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card reveal">
+
+                <span class="capability-card__index">
+                    03
+                </span>
+
+                <div class="capability-card__icon">
+                    ✦
+                </div>
+
+                <span class="capability-card__label">
+                    Experience
+                </span>
+
+                <h3>
+                    Interfaces people understand.
+                </h3>
+
+                <p>
+                    Clear UI, responsive layouts and interactions designed around usability.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card reveal">
+
+                <span class="capability-card__index">
+                    04
+                </span>
+
+                <div class="capability-card__icon">
+                    ↗
+                </div>
+
+                <span class="capability-card__label">
+                    Growth
+                </span>
+
+                <h3>
+                    Ready for what comes next.
+                </h3>
+
+                <p>
+                    SEO-friendly structures, analytics, automation and scalable digital foundations.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM STRIP -->
+        <div class="home-results__bottom reveal">
+
+            <div>
+
+                <span>
+                    Technology is only useful when it solves the right problem.
+                </span>
+
+                <strong>
+                    We build with purpose, not just features.
+                </strong>
+
+            </div>
+
+            <a
+                href="<?php echo esc_url(home_url('/about/')); ?>"
+                class="home-results__link"
+            >
+                Why Work With Us
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 <?php
 get_footer();

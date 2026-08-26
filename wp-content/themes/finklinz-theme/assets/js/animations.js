@@ -63,3 +63,90 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+/* =========================================================
+   RESULT COUNTERS
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const counters = document.querySelectorAll('.result-stat__value');
+
+    if (!counters.length) {
+        return;
+    }
+
+    const animateCounter = function (element) {
+
+        const target = parseInt(
+            element.getAttribute('data-count'),
+            10
+        );
+
+        const duration = 1400;
+
+        const startTime = performance.now();
+
+        const update = function (currentTime) {
+
+            const progress = Math.min(
+                (currentTime - startTime) / duration,
+                1
+            );
+
+            const eased =
+                1 - Math.pow(1 - progress, 3);
+
+            element.textContent =
+                Math.floor(target * eased);
+
+            if (progress < 1) {
+
+                requestAnimationFrame(update);
+
+            } else {
+
+                element.textContent = target;
+
+            }
+
+        };
+
+        requestAnimationFrame(update);
+    };
+
+
+    if ('IntersectionObserver' in window) {
+
+        const observer = new IntersectionObserver(
+            function (entries, obs) {
+
+                entries.forEach(function (entry) {
+
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    animateCounter(entry.target);
+
+                    obs.unobserve(entry.target);
+
+                });
+
+            },
+            {
+                threshold: 0.5
+            }
+        );
+
+
+        counters.forEach(function (counter) {
+            observer.observe(counter);
+        });
+
+    } else {
+
+        counters.forEach(animateCounter);
+
+    }
+
+});
