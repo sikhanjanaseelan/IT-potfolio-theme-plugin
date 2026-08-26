@@ -1451,3 +1451,282 @@ a {
     }
 
 }
+
+/* =========================================================
+   TECHNOLOGY TRUST STRIP
+   ========================================================= */
+
+.tech-trust {
+    position: relative;
+    z-index: 10;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #070d19 0%,
+            #091323 45%,
+            #080c18 100%
+        );
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+/* Gradient top accent */
+
+.tech-trust__line {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(22, 199, 255, 0.55),
+            rgba(104, 83, 255, 0.45),
+            transparent
+        );
+}
+
+
+/* Main layout */
+
+.tech-trust__inner {
+    min-height: 118px;
+
+    display: grid;
+
+    grid-template-columns:
+        245px
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 34px;
+}
+
+
+/* Intro */
+
+.tech-trust__intro {
+    position: relative;
+
+    padding-right: 30px;
+
+    border-right:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-trust__intro span {
+    display: block;
+
+    color: #718198;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.11em;
+
+    text-transform: uppercase;
+}
+
+.tech-trust__intro strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #ffffff;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MARQUEE
+   ========================================================= */
+
+.tech-trust__marquee {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    -webkit-mask-image:
+        linear-gradient(
+            90deg,
+            transparent,
+            #000 7%,
+            #000 93%,
+            transparent
+        );
+
+    mask-image:
+        linear-gradient(
+            90deg,
+            transparent,
+            #000 7%,
+            #000 93%,
+            transparent
+        );
+}
+
+
+.tech-trust__track {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+
+    gap: 16px;
+
+    animation:
+        techTrustScroll
+        28s
+        linear
+        infinite;
+}
+
+
+.tech-trust__marquee:hover .tech-trust__track {
+    animation-play-state: paused;
+}
+
+
+/* Individual technology */
+
+.tech-trust__item {
+    flex: 0 0 auto;
+
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 8px 15px 8px 9px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 12px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    color: #c7d1df;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.tech-trust__item:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(37, 187, 255, 0.25);
+
+    background:
+        rgba(22, 199, 255, 0.045);
+}
+
+
+/* Technology mini-icon */
+
+.tech-trust__icon {
+    width: 34px;
+    height: 34px;
+
+    flex: 0 0 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(24, 193, 255, 0.16),
+            rgba(106, 77, 255, 0.20)
+        );
+
+    border:
+        1px solid rgba(85, 152, 255, 0.15);
+
+    color: #71d9ff;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    box-shadow:
+        inset 0 0 15px rgba(29, 161, 255, 0.05);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .tech-trust__inner {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .tech-trust__intro {
+        padding-right: 0;
+        padding-bottom: 18px;
+
+        border-right: 0;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.07);
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .tech-trust__inner {
+        gap: 16px;
+    }
+
+    .tech-trust__item {
+        min-height: 48px;
+
+        padding:
+            7px 13px 7px 8px;
+    }
+
+    .tech-trust__icon {
+        width: 31px;
+        height: 31px;
+
+        flex-basis: 31px;
+    }
+}

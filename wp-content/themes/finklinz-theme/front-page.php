@@ -215,6 +215,109 @@ get_header();
 
 </section>
 
+<!-- ======================================================
+     TECHNOLOGY TRUST STRIP
+======================================================= -->
+
+<section class="tech-trust">
+
+    <div class="tech-trust__line"></div>
+
+    <div class="fink-container">
+
+        <div class="tech-trust__inner">
+
+            <div class="tech-trust__intro">
+                <span>Built with technologies</span>
+                <strong>businesses rely on.</strong>
+            </div>
+
+            <div class="tech-trust__marquee">
+
+                <div class="tech-trust__track">
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">W</span>
+                        <span>WordPress</span>
+                    </div>
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">Woo</span>
+                        <span>WooCommerce</span>
+                    </div>
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">PHP</span>
+                        <span>PHP</span>
+                    </div>
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">L</span>
+                        <span>Laravel</span>
+                    </div>
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">S</span>
+                        <span>Shopify</span>
+                    </div>
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">R</span>
+                        <span>React</span>
+                    </div>
+
+                    <div class="tech-trust__item">
+                        <span class="tech-trust__icon">&lt;/&gt;</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                    <!-- Duplicate set for seamless animation -->
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">W</span>
+                        <span>WordPress</span>
+                    </div>
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">Woo</span>
+                        <span>WooCommerce</span>
+                    </div>
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">PHP</span>
+                        <span>PHP</span>
+                    </div>
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">L</span>
+                        <span>Laravel</span>
+                    </div>
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">S</span>
+                        <span>Shopify</span>
+                    </div>
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">R</span>
+                        <span>React</span>
+                    </div>
+
+                    <div class="tech-trust__item" aria-hidden="true">
+                        <span class="tech-trust__icon">&lt;/&gt;</span>
+                        <span>REST APIs</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php
 get_footer();
 ?>
