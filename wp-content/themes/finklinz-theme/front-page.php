@@ -1579,6 +1579,317 @@ get_header();
     </div>
 
 </section>
+<!-- ======================================================
+     OUR PROCESS
+======================================================= -->
+
+<section class="home-process" id="process">
+
+    <div class="home-process__glow home-process__glow--one"></div>
+    <div class="home-process__glow home-process__glow--two"></div>
+
+    <div class="fink-container">
+
+        <!-- HEADER -->
+        <div class="home-process__header reveal">
+
+            <div class="home-process__heading">
+
+                <span class="home-process__eyebrow">
+                    How We Work
+                </span>
+
+                <h2>
+                    From idea to launch —
+                    <span>clearly.</span>
+                </h2>
+
+            </div>
+
+            <div class="home-process__intro">
+
+                <span class="home-process__number">
+                    04 — OUR PROCESS
+                </span>
+
+                <p>
+                    A practical development process that keeps
+                    strategy, design, engineering and business
+                    goals moving in the same direction.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             PROCESS TIMELINE
+        =================================================== -->
+
+        <div class="process-timeline reveal">
+
+            <div class="process-timeline__line">
+                <span></span>
+            </div>
+
+
+            <!-- STEP 01 -->
+            <article class="process-step">
+
+                <div class="process-step__node">
+                    <span>01</span>
+                </div>
+
+                <div class="process-step__content">
+
+                    <span class="process-step__label">
+                        Understand
+                    </span>
+
+                    <h3>Discover</h3>
+
+                    <p>
+                        We understand the business,
+                        audience, problem and goals.
+                    </p>
+
+                    <div class="process-step__meta">
+                        Goals • Users • Requirements
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STEP 02 -->
+            <article class="process-step">
+
+                <div class="process-step__node">
+                    <span>02</span>
+                </div>
+
+                <div class="process-step__content">
+
+                    <span class="process-step__label">
+                        Define
+                    </span>
+
+                    <h3>Plan</h3>
+
+                    <p>
+                        Scope, architecture and priorities
+                        are turned into a clear roadmap.
+                    </p>
+
+                    <div class="process-step__meta">
+                        Scope • Architecture • Roadmap
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STEP 03 -->
+            <article class="process-step">
+
+                <div class="process-step__node">
+                    <span>03</span>
+                </div>
+
+                <div class="process-step__content">
+
+                    <span class="process-step__label">
+                        Experience
+                    </span>
+
+                    <h3>Design</h3>
+
+                    <p>
+                        Interfaces and user journeys are
+                        designed before development begins.
+                    </p>
+
+                    <div class="process-step__meta">
+                        UX • UI • Prototype
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STEP 04 -->
+            <article class="process-step">
+
+                <div class="process-step__node">
+                    <span>04</span>
+                </div>
+
+                <div class="process-step__content">
+
+                    <span class="process-step__label">
+                        Engineering
+                    </span>
+
+                    <h3>Build</h3>
+
+                    <p>
+                        Clean and maintainable development
+                        brings the product to life.
+                    </p>
+
+                    <div class="process-step__meta">
+                        Code • Integrations • Testing
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STEP 05 -->
+            <article class="process-step">
+
+                <div class="process-step__node">
+                    <span>05</span>
+                </div>
+
+                <div class="process-step__content">
+
+                    <span class="process-step__label">
+                        Delivery
+                    </span>
+
+                    <h3>Launch</h3>
+
+                    <p>
+                        We prepare, test and deploy the
+                        finished solution with confidence.
+                    </p>
+
+                    <div class="process-step__meta">
+                        QA • Deploy • Optimize
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- STEP 06 -->
+            <article class="process-step">
+
+                <div class="process-step__node">
+                    <span>06</span>
+                </div>
+
+                <div class="process-step__content">
+
+                    <span class="process-step__label">
+                        Partnership
+                    </span>
+
+                    <h3>Support</h3>
+
+                    <p>
+                        After launch, we continue improving
+                        and supporting the product.
+                    </p>
+
+                    <div class="process-step__meta">
+                        Support • Improve • Scale
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- ==================================================
+             IDEA → PRODUCT → GROWTH
+        =================================================== -->
+
+        <div class="process-journey reveal">
+
+            <div class="process-journey__visual">
+
+                <div class="journey-point">
+
+                    <span class="journey-point__dot"></span>
+
+                    <div>
+                        <small>Starting Point</small>
+                        <strong>Idea</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="journey-path">
+                    <span></span>
+                </div>
+
+
+                <div class="journey-point journey-point--product">
+
+                    <span class="journey-point__dot"></span>
+
+                    <div>
+                        <small>What We Build</small>
+                        <strong>Product</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="journey-path">
+                    <span></span>
+                </div>
+
+
+                <div class="journey-point journey-point--growth">
+
+                    <span class="journey-point__dot"></span>
+
+                    <div>
+                        <small>Where It Leads</small>
+                        <strong>Growth</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="process-journey__message">
+
+                <span>
+                    SIMPLE BY DESIGN
+                </span>
+
+                <h3>
+                    A practical process.
+                    <strong>No unnecessary complexity.</strong>
+                </h3>
+
+                <p>
+                    Clear communication, sensible technology
+                    choices and visible progress from the
+                    first conversation to launch.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <?php
 get_footer();
