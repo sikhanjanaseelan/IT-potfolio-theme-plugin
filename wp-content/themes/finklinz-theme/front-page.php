@@ -2224,6 +2224,182 @@ get_header();
     </div>
 
 </section>
+<!-- ======================================================
+     FINAL CTA / CONTACT
+======================================================= -->
+
+<section class="home-final-cta">
+
+    <div class="home-final-cta__orb home-final-cta__orb--one"></div>
+    <div class="home-final-cta__orb home-final-cta__orb--two"></div>
+
+    <div class="fink-container">
+
+        <div class="home-final-cta__panel reveal">
+
+            <div class="home-final-cta__content">
+
+                <span class="home-final-cta__eyebrow">
+                    Let’s Build Something Better
+                </span>
+
+                <h2>
+                    Have an idea?
+                    <span>Let’s turn it into something that works.</span>
+                </h2>
+
+                <p>
+                    Whether you need a website, eCommerce platform, custom web application,
+                    mobile experience or a complete digital solution, we can help shape,
+                    build and launch it.
+                </p>
+
+                <div class="home-final-cta__actions">
+
+                    <?php
+                    finklinz_button(
+                        'Start Your Project',
+                        home_url('/contact/'),
+                        'gradient'
+                    );
+                    ?>
+
+                    <a
+                        href="<?php echo esc_url(home_url('/portfolio/')); ?>"
+                        class="home-final-cta__secondary"
+                    >
+                        Explore Our Work
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="home-final-cta__contact">
+
+                <div class="home-final-cta__contact-head">
+
+                    <span>
+                        QUICK CONTACT
+                    </span>
+
+                    <strong>
+                        Let’s talk.
+                    </strong>
+
+                </div>
+
+
+                <a
+                    href="mailto:info@finklinz.com"
+                    class="final-contact-item"
+                >
+
+                    <div class="final-contact-item__icon">
+                        @
+                    </div>
+
+                    <div>
+
+                        <span>Email</span>
+
+                        <strong>
+                            info@finklinz.com
+                        </strong>
+
+                    </div>
+
+                    <i>→</i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="final-contact-item"
+                >
+
+                    <div class="final-contact-item__icon">
+                        W
+                    </div>
+
+                    <div>
+
+                        <span>WhatsApp</span>
+
+                        <strong>
+                            Start a Conversation
+                        </strong>
+
+                    </div>
+
+                    <i>→</i>
+
+                </a>
+
+
+                <div class="final-contact-item">
+
+                    <div class="final-contact-item__icon">
+                        ◉
+                    </div>
+
+                    <div>
+
+                        <span>Location</span>
+
+                        <strong>
+                            Warsaw, Poland
+                        </strong>
+
+                    </div>
+
+                    <i>EU</i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="home-final-cta__meta reveal">
+
+            <span>
+                Websites
+            </span>
+
+            <i>•</i>
+
+            <span>
+                eCommerce
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Web Applications
+            </span>
+
+            <i>•</i>
+
+            <span>
+                Mobile Apps
+            </span>
+
+            <i>•</i>
+
+            <span>
+                APIs & Integrations
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
 
 <?php
 get_footer();
