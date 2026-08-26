@@ -1891,6 +1891,340 @@ get_header();
 
 </section>
 
+<!-- ======================================================
+     TECHNOLOGY / ENGINEERING STACK
+======================================================= -->
+
+<section class="home-stack" id="technologies">
+
+    <div class="home-stack__glow home-stack__glow--one"></div>
+    <div class="home-stack__glow home-stack__glow--two"></div>
+
+    <div class="fink-container">
+
+        <!-- HEADER -->
+        <div class="home-stack__header reveal">
+
+            <div>
+
+                <span class="home-stack__eyebrow">
+                    Technology Stack
+                </span>
+
+                <h2>
+                    The right technology.
+                    <span>For the right solution.</span>
+                </h2>
+
+            </div>
+
+            <div class="home-stack__intro">
+
+                <span class="home-stack__number">
+                    05 — TECHNOLOGIES
+                </span>
+
+                <p>
+                    We choose technologies around performance,
+                    maintainability and business requirements —
+                    not simply because they are trending.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN STACK -->
+        <div class="home-stack__layout">
+
+            <!-- ==================================================
+                 TECHNOLOGY CORE
+            =================================================== -->
+
+            <div class="stack-core reveal">
+
+                <div class="stack-core__grid"></div>
+
+                <div class="stack-core__orbit stack-core__orbit--one"></div>
+                <div class="stack-core__orbit stack-core__orbit--two"></div>
+                <div class="stack-core__orbit stack-core__orbit--three"></div>
+
+
+                <span class="stack-core__node stack-core__node--php">
+                    PHP
+                </span>
+
+                <span class="stack-core__node stack-core__node--wp">
+                    WP
+                </span>
+
+                <span class="stack-core__node stack-core__node--js">
+                    JS
+                </span>
+
+                <span class="stack-core__node stack-core__node--api">
+                    API
+                </span>
+
+                <span class="stack-core__node stack-core__node--db">
+                    DB
+                </span>
+
+                <span class="stack-core__node stack-core__node--git">
+                    Git
+                </span>
+
+
+                <div class="stack-core__center">
+
+                    <span>
+                        F
+                    </span>
+
+                    <small>
+                        ENGINEERING
+                    </small>
+
+                    <strong>
+                        CORE
+                    </strong>
+
+                </div>
+
+
+                <div class="stack-core__status">
+
+                    <i></i>
+
+                    <span>
+                        Technology ecosystem
+                    </span>
+
+                    <strong>
+                        Connected
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 STACK CATEGORIES
+            =================================================== -->
+
+            <div class="stack-categories">
+
+
+                <!-- FRONTEND -->
+                <article class="stack-category reveal">
+
+                    <div class="stack-category__head">
+
+                        <div>
+                            <span>01</span>
+                            <h3>Frontend</h3>
+                        </div>
+
+                        <small>
+                            EXPERIENCE
+                        </small>
+
+                    </div>
+
+                    <div class="stack-category__items">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Responsive UI</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- BACKEND -->
+                <article class="stack-category reveal">
+
+                    <div class="stack-category__head">
+
+                        <div>
+                            <span>02</span>
+                            <h3>Backend</h3>
+                        </div>
+
+                        <small>
+                            ENGINEERING
+                        </small>
+
+                    </div>
+
+                    <div class="stack-category__items">
+
+                        <span>PHP</span>
+                        <span>Laravel</span>
+                        <span>REST API</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CMS -->
+                <article class="stack-category reveal">
+
+                    <div class="stack-category__head">
+
+                        <div>
+                            <span>03</span>
+                            <h3>CMS & Commerce</h3>
+                        </div>
+
+                        <small>
+                            PLATFORMS
+                        </small>
+
+                    </div>
+
+                    <div class="stack-category__items">
+
+                        <span>WordPress</span>
+                        <span>WooCommerce</span>
+                        <span>Shopify</span>
+                        <span>Elementor</span>
+                        <span>Custom Themes</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- INTEGRATION -->
+                <article class="stack-category reveal">
+
+                    <div class="stack-category__head">
+
+                        <div>
+                            <span>04</span>
+                            <h3>Integrations</h3>
+                        </div>
+
+                        <small>
+                            CONNECTIVITY
+                        </small>
+
+                    </div>
+
+                    <div class="stack-category__items">
+
+                        <span>REST APIs</span>
+                        <span>Payments</span>
+                        <span>Webhooks</span>
+                        <span>Third-party APIs</span>
+                        <span>Automation</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TOOLS -->
+                <article class="stack-category reveal">
+
+                    <div class="stack-category__head">
+
+                        <div>
+                            <span>05</span>
+                            <h3>Tools & Delivery</h3>
+                        </div>
+
+                        <small>
+                            WORKFLOW
+                        </small>
+
+                    </div>
+
+                    <div class="stack-category__items">
+
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Linux</span>
+                        <span>cPanel</span>
+                        <span>Deployment</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DESIGN -->
+                <article class="stack-category reveal">
+
+                    <div class="stack-category__head">
+
+                        <div>
+                            <span>06</span>
+                            <h3>Design & Product</h3>
+                        </div>
+
+                        <small>
+                            CREATIVE
+                        </small>
+
+                    </div>
+
+                    <div class="stack-category__items">
+
+                        <span>Figma</span>
+                        <span>UI/UX</span>
+                        <span>Wireframes</span>
+                        <span>Prototyping</span>
+                        <span>Design Systems</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM -->
+        <div class="home-stack__bottom reveal">
+
+            <div>
+
+                <span>
+                    NOT LIMITED TO A SINGLE STACK
+                </span>
+
+                <strong>
+                    Technology should fit the project — not the other way around.
+                </strong>
+
+            </div>
+
+            <a
+                href="<?php echo esc_url(
+                    home_url('/technologies/')
+                ); ?>"
+            >
+                Explore Technologies
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php
 get_footer();
 ?>
