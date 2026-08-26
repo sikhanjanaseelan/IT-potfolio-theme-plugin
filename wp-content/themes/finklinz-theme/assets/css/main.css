@@ -102,3 +102,1352 @@ a {
     color: var(--fink-muted);
     font-size: 1.1rem;
 }
+/* =========================================================
+   HOME HERO
+   ========================================================= */
+
+.home-hero {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: flex-start;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 18% 25%,
+            rgba(20, 180, 255, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 82% 55%,
+            rgba(115, 55, 255, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #050914 0%,
+            #07101d 45%,
+            #070b18 100%
+        );
+
+    padding: 38px 0 65px;
+}
+
+
+/* ==============================
+   HERO GRID
+   ============================== */
+
+.home-hero__grid {
+    position: relative;
+    z-index: 4;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(520px, 0.95fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* ==============================
+   HERO CONTENT
+   ============================== */
+
+.home-hero__content {
+
+    position: relative;
+
+    max-width: 720px;
+}
+
+
+.home-hero__eyebrow {
+
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    padding:
+        8px 14px;
+
+    border:
+        1px solid
+        rgba(22, 199, 255, 0.20);
+
+    border-radius: 100px;
+
+    background:
+        rgba(22, 199, 255, 0.06);
+
+    color:
+        #58d8ff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+
+    box-shadow:
+        inset 0 0 22px
+        rgba(22, 199, 255, 0.03);
+}
+
+
+.home-hero__title {
+
+    margin:
+        0 0 24px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        clamp(3.1rem, 4.7vw, 5.25rem);
+
+    font-weight:
+        800;
+
+    line-height:
+        0.96;
+
+    letter-spacing:
+        -0.05em;
+}
+
+
+.home-hero__title span {
+
+    display: block;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ffffff 0%,
+            #45ccff 35%,
+            #5f7cff 66%,
+            #9965ff 100%
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    color:
+        transparent;
+}
+
+
+.home-hero__text {
+
+    max-width:
+        650px;
+
+    margin:
+        0;
+
+    color:
+        #a8b5c9;
+
+    font-size:
+        18px;
+
+    line-height:
+        1.8;
+}
+
+
+/* ==============================
+   ACTION BUTTONS
+   ============================== */
+
+.home-hero__actions {
+
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin-top: 32px;
+}
+
+
+.home-hero__secondary-btn {
+
+    min-height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding:
+        0 22px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.16);
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    color:
+        #ffffff;
+
+    font-size:
+        15px;
+
+    font-weight:
+        700;
+
+    text-decoration:
+        none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.home-hero__secondary-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    border-color:
+        rgba(22, 199, 255, 0.45);
+
+    background:
+        rgba(22, 199, 255, 0.06);
+}
+
+
+/* ==============================
+   FEATURES
+   ============================== */
+
+.home-hero__features {
+
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap:
+        14px 24px;
+
+    margin-top:
+        32px;
+}
+
+
+.home-hero__feature {
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color:
+        #aeb9ca;
+
+    font-size:
+        13px;
+
+    font-weight:
+        600;
+}
+
+
+.home-hero__feature-dot {
+
+    width: 8px;
+    height: 8px;
+
+    border-radius:
+        100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16c7ff,
+            #7755ff
+        );
+
+    box-shadow:
+        0 0 12px
+        rgba(22, 199, 255, 0.6);
+}
+
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
+
+.home-hero__visual {
+
+    position: relative;
+
+    min-height:
+        520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==============================
+   LAPTOP
+   ============================== */
+
+.hero-device--laptop {
+
+    position: relative;
+    z-index: 5;
+
+    width:
+        min(100%, 610px);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+
+    border-radius:
+        22px;
+
+    overflow:
+        hidden;
+
+    background:
+        #091121;
+
+    box-shadow:
+
+        0 45px 90px
+        rgba(0, 0, 0, 0.45),
+
+        0 0 70px
+        rgba(54, 117, 255, 0.10),
+
+        inset 0 0 0 1px
+        rgba(255, 255, 255, 0.03);
+
+    transform:
+        perspective(1200px)
+        rotateY(-4deg)
+        rotateX(2deg);
+}
+
+
+/* Browser top bar */
+
+.hero-device__topbar {
+
+    height:
+        38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding:
+        0 14px;
+
+    background:
+        rgba(255, 255, 255, 0.04);
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.05);
+}
+
+
+.hero-device__dots {
+
+    display: flex;
+
+    gap: 5px;
+}
+
+
+.hero-device__dots span {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius:
+        100%;
+
+    background:
+        rgba(255, 255, 255, 0.16);
+}
+
+
+.hero-device__address {
+
+    width:
+        45%;
+
+    height:
+        9px;
+
+    border-radius:
+        100px;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+}
+
+
+/* ==============================
+   DASHBOARD
+   ============================== */
+
+.hero-dashboard {
+
+    min-height:
+        390px;
+
+    display: grid;
+
+    grid-template-columns:
+        72px 1fr;
+}
+
+
+.hero-dashboard__sidebar {
+
+    padding:
+        22px 16px;
+
+    display: flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    gap: 18px;
+
+    background:
+        rgba(4, 8, 18, 0.70);
+
+    border-right:
+        1px solid
+        rgba(255, 255, 255, 0.05);
+}
+
+
+.hero-dashboard__logo {
+
+    width: 34px;
+    height: 34px;
+
+    margin-bottom:
+        14px;
+
+    border-radius:
+        10px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1fc5ff,
+            #5d67ff,
+            #8d4cff
+        );
+
+    box-shadow:
+        0 0 24px
+        rgba(39, 112, 255, 0.30);
+}
+
+
+.hero-dashboard__sidebar span {
+
+    width:
+        28px;
+
+    height:
+        7px;
+
+    border-radius:
+        100px;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+.hero-dashboard__content {
+
+    padding:
+        28px;
+}
+
+
+.hero-dashboard__heading {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+}
+
+
+.hero-dashboard__heading small {
+
+    color:
+        #66768f;
+
+    font-size:
+        10px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.12em;
+}
+
+
+.hero-dashboard__heading h3 {
+
+    margin:
+        2px 0 0;
+
+    color:
+        #ffffff;
+
+    font-size:
+        19px;
+}
+
+
+.hero-dashboard__avatar {
+
+    width:
+        36px;
+
+    height:
+        36px;
+
+    border-radius:
+        50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #15c6ff,
+            #704cff
+        );
+}
+
+
+.hero-dashboard__stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        12px;
+
+    margin-top:
+        26px;
+}
+
+
+.hero-stat-card {
+
+    padding:
+        16px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.06);
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+}
+
+
+.hero-stat-card span {
+
+    display:
+        block;
+
+    color:
+        #71819a;
+
+    font-size:
+        10px;
+}
+
+
+.hero-stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        19px;
+}
+
+
+.hero-dashboard__chart {
+
+    position:
+        relative;
+
+    height:
+        190px;
+
+    margin-top:
+        20px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.05);
+
+    border-radius:
+        16px;
+
+    overflow:
+        hidden;
+
+    background:
+
+        linear-gradient(
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        28px 28px;
+}
+
+
+.hero-dashboard__chart-line {
+
+    position:
+        absolute;
+
+    inset:
+        30px 30px auto 30px;
+
+    height:
+        2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #16c7ff,
+            #3675ff,
+            #7c3cff
+        );
+
+    transform:
+        rotate(-7deg);
+
+    box-shadow:
+        0 0 20px
+        rgba(22, 199, 255, 0.4);
+}
+
+
+.hero-dashboard__chart-bars {
+
+    position:
+        absolute;
+
+    left:
+        30px;
+
+    right:
+        30px;
+
+    bottom:
+        22px;
+
+    height:
+        115px;
+
+    display:
+        flex;
+
+    align-items:
+        end;
+
+    gap:
+        14px;
+}
+
+
+.hero-dashboard__chart-bars span {
+
+    flex:
+        1;
+
+    border-radius:
+        8px 8px 3px 3px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(40, 192, 255, 0.8),
+            rgba(78, 84, 255, 0.3)
+        );
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+.hero-phone {
+
+    position:
+        absolute;
+
+    z-index:
+        8;
+
+    right:
+        -5px;
+
+    bottom:
+        25px;
+
+    width:
+        170px;
+
+    height:
+        340px;
+
+    padding:
+        8px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.14);
+
+    border-radius:
+        30px;
+
+    background:
+        #060b16;
+
+    box-shadow:
+        0 30px 65px
+        rgba(0, 0, 0, 0.48),
+
+        0 0 40px
+        rgba(111, 58, 255, 0.15);
+
+    transform:
+        rotate(4deg);
+}
+
+
+.hero-phone__notch {
+
+    position:
+        absolute;
+
+    z-index:
+        5;
+
+    top:
+        13px;
+
+    left:
+        50%;
+
+    width:
+        58px;
+
+    height:
+        16px;
+
+    border-radius:
+        100px;
+
+    background:
+        #050914;
+
+    transform:
+        translateX(-50%);
+}
+
+
+.hero-phone__screen {
+
+    height:
+        100%;
+
+    padding:
+        24px 14px 14px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        23px;
+
+    background:
+        linear-gradient(
+            150deg,
+            #0a1322 0%,
+            #102747 58%,
+            #30216b 100%
+        );
+}
+
+
+.hero-phone__header {
+
+    width:
+        70%;
+
+    height:
+        7px;
+
+    margin-top:
+        8px;
+
+    border-radius:
+        100px;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+}
+
+
+.hero-phone__product {
+
+    height:
+        125px;
+
+    margin-top:
+        26px;
+
+    border-radius:
+        18px;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 30%,
+            #39cfff,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 70% 65%,
+            #8f53ff,
+            transparent 38%
+        ),
+
+        linear-gradient(
+            135deg,
+            #0f1a30,
+            #172a50
+        );
+}
+
+
+.hero-phone__label {
+
+    display:
+        block;
+
+    margin-top:
+        16px;
+
+    color:
+        #59d8ff;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.10em;
+}
+
+
+.hero-phone strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.35;
+}
+
+
+.hero-phone__button {
+
+    width:
+        70%;
+
+    height:
+        26px;
+
+    margin-top:
+        14px;
+
+    border-radius:
+        8px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #16c7ff,
+            #6855ff
+        );
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+   ========================================================= */
+
+.hero-floating-card {
+
+    position:
+        absolute;
+
+    z-index:
+        12;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    padding:
+        10px 14px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(8, 14, 28, 0.80);
+
+    color:
+        #dce8f7;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    box-shadow:
+        0 14px 35px
+        rgba(0, 0, 0, 0.25);
+
+    backdrop-filter:
+        blur(12px);
+}
+
+
+.hero-floating-card span {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        28px;
+
+    height:
+        28px;
+
+    border-radius:
+        8px;
+
+    color:
+        #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #16c7ff,
+            #6c4fff
+        );
+}
+
+
+.hero-floating-card--wp {
+
+    left:
+        -28px;
+
+    top:
+        115px;
+}
+
+
+.hero-floating-card--shop {
+
+    right:
+        60px;
+
+    top:
+        30px;
+}
+
+
+.hero-floating-card--code {
+
+    left:
+        30px;
+
+    bottom:
+        48px;
+}
+
+
+/* =========================================================
+   TECH ORBITS
+   ========================================================= */
+
+.hero-tech-orbit {
+
+    position:
+        absolute;
+
+    border:
+        1px solid
+        rgba(79, 119, 255, 0.12);
+
+    border-radius:
+        50%;
+
+    pointer-events:
+        none;
+}
+
+
+.hero-tech-orbit--one {
+
+    width:
+        540px;
+
+    height:
+        540px;
+
+    border-style:
+        dashed;
+
+    animation:
+        heroOrbitRotate 32s linear infinite;
+}
+
+
+.hero-tech-orbit--two {
+
+    width:
+        390px;
+
+    height:
+        390px;
+
+    border-color:
+        rgba(22, 199, 255, 0.09);
+
+    animation:
+        heroOrbitRotate 24s linear infinite reverse;
+}
+
+
+/* =========================================================
+   MOVING GLOW
+   ========================================================= */
+
+.home-hero__glow {
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    border-radius: 50%;
+
+    filter: blur(85px);
+
+    opacity: 0.36;
+
+    pointer-events: none;
+
+    mix-blend-mode: screen;
+}
+
+.home-hero__glow--one {
+    left: -220px;
+    top: -100px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 195, 255, 0.85) 0%,
+            rgba(0, 140, 255, 0.40) 35%,
+            transparent 70%
+        );
+
+    animation:
+        heroGlowOne 9s ease-in-out infinite alternate;
+}
+
+.home-hero__glow--two {
+    right: -200px;
+    bottom: -180px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(125, 65, 255, 0.9) 0%,
+            rgba(74, 64, 255, 0.42) 38%,
+            transparent 72%
+        );
+
+    animation:
+        heroGlowTwo 11s ease-in-out infinite alternate;
+}
+
+
+/* =========================================================
+   HERO RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1150px) {
+
+    .home-hero__grid {
+
+        grid-template-columns:
+            1fr 480px;
+
+        gap:
+            40px;
+    }
+
+
+    .home-hero__title {
+
+        font-size:
+            clamp(
+                3.2rem,
+                5.5vw,
+                5.7rem
+            );
+    }
+
+
+    .home-hero__visual {
+
+        transform:
+            scale(0.90);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .home-hero {
+
+        padding:
+            90px 0;
+    }
+
+
+    .home-hero__grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            50px;
+    }
+
+
+    .home-hero__content {
+
+        max-width:
+            760px;
+    }
+
+
+    .home-hero__visual {
+
+        width:
+            100%;
+
+        max-width:
+            680px;
+
+        margin:
+            0 auto;
+
+        transform:
+            none;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+    .home-hero {
+
+        padding:
+            70px 0 60px;
+    }
+
+
+    .home-hero__title {
+
+        font-size:
+            clamp(
+                2.7rem,
+                13vw,
+                4rem
+            );
+    }
+
+
+    .home-hero__text {
+
+        font-size:
+            16px;
+    }
+
+
+    .home-hero__actions {
+
+        align-items:
+            stretch;
+
+        flex-direction:
+            column;
+    }
+
+
+    .home-hero__actions .fink-btn,
+    .home-hero__secondary-btn {
+
+        width:
+            100%;
+    }
+
+
+    .home-hero__visual {
+
+        min-height:
+            420px;
+
+        transform:
+            scale(0.78);
+
+        transform-origin:
+            top center;
+
+        margin-bottom:
+            -90px;
+    }
+
+
+    .hero-phone {
+
+        right:
+            -30px;
+    }
+
+
+    .hero-floating-card--wp {
+
+        left:
+            -15px;
+    }
+
+
+    .hero-floating-card--shop {
+
+        right:
+            -10px;
+    }
+
+}

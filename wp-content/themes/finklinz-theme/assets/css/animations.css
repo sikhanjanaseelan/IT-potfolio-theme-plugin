@@ -35,3 +35,172 @@
         transition-duration: .01ms !important;
     }
 }
+
+
+@keyframes heroGlowOne {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(0.95);
+    }
+
+    50% {
+        transform:
+            translate3d(170px, 55px, 0)
+            scale(1.15);
+    }
+
+    100% {
+        transform:
+            translate3d(290px, 110px, 0)
+            scale(1.03);
+    }
+}
+
+
+@keyframes heroGlowTwo {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate3d(-140px, -70px, 0)
+            scale(1.16);
+    }
+
+    100% {
+        transform:
+            translate3d(-250px, -110px, 0)
+            scale(1.05);
+    }
+}
+@keyframes heroOrbitRotate {
+
+    from {
+        transform:
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            rotate(360deg);
+    }
+
+}
+
+
+.hero-device--laptop {
+
+    animation:
+        heroLaptopFloat
+        7s
+        ease-in-out
+        infinite;
+}
+
+
+.hero-phone {
+
+    animation:
+        heroPhoneFloat
+        6s
+        ease-in-out
+        infinite;
+}
+
+
+.hero-floating-card {
+
+    animation:
+        heroCardFloat
+        5s
+        ease-in-out
+        infinite;
+}
+
+
+.hero-floating-card--shop {
+
+    animation-delay:
+        -1.5s;
+}
+
+
+.hero-floating-card--code {
+
+    animation-delay:
+        -2.7s;
+}
+
+
+@keyframes heroLaptopFloat {
+
+    0%,
+    100% {
+
+        transform:
+            perspective(1200px)
+            rotateY(-4deg)
+            rotateX(2deg)
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            perspective(1200px)
+            rotateY(-4deg)
+            rotateX(2deg)
+            translateY(-8px);
+
+    }
+
+}
+
+
+@keyframes heroPhoneFloat {
+
+    0%,
+    100% {
+
+        transform:
+            rotate(4deg)
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            rotate(4deg)
+            translateY(-12px);
+
+    }
+
+}
+
+
+@keyframes heroCardFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-7px);
+
+    }
+
+}
