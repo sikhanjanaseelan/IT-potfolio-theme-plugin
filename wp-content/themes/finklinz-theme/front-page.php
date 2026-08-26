@@ -779,6 +779,543 @@ get_header();
 
 </section>
 
+
+<!-- ======================================================
+     SELECTED WORK / PORTFOLIO
+======================================================= -->
+
+<section class="home-work" id="work">
+
+    <div class="home-work__glow home-work__glow--one"></div>
+    <div class="home-work__glow home-work__glow--two"></div>
+
+    <div class="fink-container">
+
+        <!-- SECTION HEADER -->
+        <div class="home-work__header reveal">
+
+            <div>
+                <span class="home-work__eyebrow">
+                    Selected Work
+                </span>
+
+                <h2>
+                    Digital products built
+                    <span>to make an impact.</span>
+                </h2>
+            </div>
+
+            <div class="home-work__intro">
+
+                <span class="home-work__number">
+                    02 — PORTFOLIO
+                </span>
+
+                <p>
+                    A selection of websites, commerce platforms,
+                    applications and digital experiences designed
+                    around real business goals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTERS -->
+        <div class="home-work__filters reveal">
+
+            <button class="work-filter is-active" data-filter="all">
+                All
+            </button>
+
+            <button class="work-filter" data-filter="web">
+                Websites
+            </button>
+
+            <button class="work-filter" data-filter="commerce">
+                eCommerce
+            </button>
+
+            <button class="work-filter" data-filter="apps">
+                Web Apps
+            </button>
+
+            <button class="work-filter" data-filter="branding">
+                Branding
+            </button>
+
+        </div>
+
+
+        <!-- ==================================================
+             PROJECT GRID
+        =================================================== -->
+
+        <div class="home-work__grid">
+
+
+            <!-- FEATURED PROJECT -->
+            <article
+                class="work-card work-card--featured reveal"
+                data-category="commerce"
+            >
+
+                <div class="work-card__visual">
+
+                    <div class="work-browser">
+
+                        <div class="work-browser__bar">
+
+                            <div>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="work-store">
+
+                            <div class="work-store__nav">
+
+                                <strong>STORE</strong>
+
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="work-store__hero">
+
+                                <div class="work-store__copy">
+
+                                    <small>
+                                        New Collection
+                                    </small>
+
+                                    <strong></strong>
+                                    <strong></strong>
+
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="work-store__product">
+
+                                    <div></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="work-store__products">
+
+                                <div></div>
+                                <div></div>
+                                <div></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="work-card__floating-stat">
+
+                        <span>Conversion</span>
+
+                        <strong>+38%</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="work-card__info">
+
+                    <div>
+
+                        <span class="work-card__category">
+                            eCommerce / WooCommerce
+                        </span>
+
+                        <h3>
+                            Premium Online Store
+                        </h3>
+
+                        <p>
+                            A conversion-focused commerce experience
+                            combining custom storefront design,
+                            product management and scalable integrations.
+                        </p>
+
+                    </div>
+
+
+                    <span class="work-card__index">
+                        01
+                    </span>
+
+                </div>
+
+
+                <div class="work-card__footer">
+
+                    <div class="work-card__tags">
+
+                        <span>WordPress</span>
+                        <span>WooCommerce</span>
+                        <span>REST API</span>
+
+                    </div>
+
+                    <a href="#">
+                        View Case Study
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article
+                class="work-card reveal"
+                data-category="web"
+            >
+
+                <div class="work-card__visual work-card__visual--corporate">
+
+                    <div class="work-mini-site">
+
+                        <div class="work-mini-site__nav"></div>
+
+                        <div class="work-mini-site__content">
+
+                            <small></small>
+
+                            <strong></strong>
+                            <strong></strong>
+
+                            <span></span>
+
+                        </div>
+
+                        <div class="work-mini-site__blocks">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="work-card__info">
+
+                    <div>
+
+                        <span class="work-card__category">
+                            Corporate Website
+                        </span>
+
+                        <h3>
+                            Digital Business Platform
+                        </h3>
+
+                    </div>
+
+                    <span class="work-card__index">
+                        02
+                    </span>
+
+                </div>
+
+
+                <div class="work-card__footer">
+
+                    <div class="work-card__tags">
+
+                        <span>WordPress</span>
+                        <span>PHP</span>
+
+                    </div>
+
+                    <a href="#">
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+            <article
+                class="work-card reveal"
+                data-category="apps"
+            >
+
+                <div class="work-card__visual work-card__visual--dashboard">
+
+                    <div class="work-dashboard">
+
+                        <aside>
+                            <strong></strong>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </aside>
+
+
+                        <div class="work-dashboard__main">
+
+                            <div class="work-dashboard__top">
+                                <strong></strong>
+                                <span></span>
+                            </div>
+
+                            <div class="work-dashboard__stats">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <div class="work-dashboard__chart">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="work-card__info">
+
+                    <div>
+
+                        <span class="work-card__category">
+                            Web Application
+                        </span>
+
+                        <h3>
+                            Business Management Portal
+                        </h3>
+
+                    </div>
+
+                    <span class="work-card__index">
+                        03
+                    </span>
+
+                </div>
+
+
+                <div class="work-card__footer">
+
+                    <div class="work-card__tags">
+
+                        <span>Laravel</span>
+                        <span>REST API</span>
+
+                    </div>
+
+                    <a href="#">
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 4 -->
+            <article
+                class="work-card reveal"
+                data-category="branding"
+            >
+
+                <div class="work-card__visual work-card__visual--brand">
+
+                    <div class="work-brand">
+
+                        <span>F</span>
+
+                        <strong>
+                            DIGITAL
+                        </strong>
+
+                        <small>
+                            BRAND SYSTEM
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="work-card__info">
+
+                    <div>
+
+                        <span class="work-card__category">
+                            UI/UX & Branding
+                        </span>
+
+                        <h3>
+                            Digital Brand Experience
+                        </h3>
+
+                    </div>
+
+                    <span class="work-card__index">
+                        04
+                    </span>
+
+                </div>
+
+
+                <div class="work-card__footer">
+
+                    <div class="work-card__tags">
+
+                        <span>Branding</span>
+                        <span>UI/UX</span>
+
+                    </div>
+
+                    <a href="#">
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 5 -->
+            <article
+                class="work-card reveal"
+                data-category="apps"
+            >
+
+                <div class="work-card__visual work-card__visual--mobile">
+
+                    <div class="work-mobile-device">
+
+                        <div class="work-mobile-device__screen">
+
+                            <span></span>
+
+                            <div></div>
+
+                            <strong></strong>
+                            <strong></strong>
+
+                            <i></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="work-mobile-circle"></div>
+
+                </div>
+
+
+                <div class="work-card__info">
+
+                    <div>
+
+                        <span class="work-card__category">
+                            Mobile Experience
+                        </span>
+
+                        <h3>
+                            Customer Mobile Platform
+                        </h3>
+
+                    </div>
+
+                    <span class="work-card__index">
+                        05
+                    </span>
+
+                </div>
+
+
+                <div class="work-card__footer">
+
+                    <div class="work-card__tags">
+
+                        <span>Mobile</span>
+                        <span>API</span>
+
+                    </div>
+
+                    <a href="#">
+                        View Project
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- BOTTOM CTA -->
+
+        <div class="home-work__bottom reveal">
+
+            <p>
+                Websites. Stores. Applications.
+                <strong>Built around the business behind them.</strong>
+            </p>
+
+            <a
+                href="<?php echo esc_url(home_url('/portfolio/')); ?>"
+                class="home-work__cta"
+            >
+                View Full Portfolio
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php
 get_footer();
 ?>
